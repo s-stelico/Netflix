@@ -4,23 +4,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: sans-serif;
   color: white;
   width: 100%;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 .container {
   width: 100%;
   max-width: 113rem;
   margin: 0 1.6rem;
 }
+
 /*Header part*/
 header {
   position: absolute;
@@ -28,25 +33,27 @@ header {
   width: 100%;
   padding: 15px;
 }
+
 .nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-a {
+
+.loglink {
   color: white;
   font-family: sans-serif;
   background: #e50914;
-
   font-size: 1.6em;
   font-weight: 400;
-
   align-self: center;
   padding: 7px 17px;
-
   border-radius: 3px;
-
   text-decoration: none;
+}
+
+a {
+  font-size: 1.5em;
 }
 
 /*Button*/
@@ -62,13 +69,13 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 button::after {
   content: "";
   display: inline-block;
   width: 10px;
   height: 19px;
   background: url("img/seta.svg");
-
   margin-left: 20px;
 }
 
@@ -80,15 +87,13 @@ button:hover {
 main {
   width: auto;
   height: 785px;
-
   background: url("img/bg.jpg") center;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: relative;
 }
+
 .email-login {
   z-index: 1;
 }
@@ -103,6 +108,7 @@ main {
   text-align: center;
   margin: 1rem auto;
 }
+
 .text-login p {
   font-size: 1.6em;
 }
@@ -112,6 +118,7 @@ main {
   width: 580px;
   flex-direction: column;
 }
+
 form {
   display: flex;
   margin-top: 30px;
@@ -121,23 +128,19 @@ form {
   height: 48px;
   width: 80%;
   padding: 15px 5px;
-
   font-size: 1.6em;
   font-family: sans-serif;
   border: solid 1px #8c8c8c;
   border-radius: 2px;
-
   appearance: none;
 }
 
 .gradient {
   background: rgb(0, 0, 0, 0.4);
-  background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  background-image: linear-gradient(to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -146,18 +149,19 @@ form {
 }
 
 /*Section and grids*/
-
 section {
   overflow-x: hidden;
   background: black;
   padding: 0;
   border-top: solid 8px #222;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1.2fr));
   align-items: center;
 }
+
 /*text information*/
 .text-info {
   margin: 16px;
@@ -177,10 +181,12 @@ section {
 .config-img {
   position: relative;
 }
+
 .config-img img {
   z-index: 1;
   position: relative;
 }
+
 .tv-video {
   position: absolute;
   padding: 0;
@@ -193,13 +199,15 @@ section {
 .section-dowload {
   padding: 70px 45px;
 }
-.section-dowload .grid > div:first-child {
+
+.section-dowload .grid>div:first-child {
   order: 2;
 }
 
 .section-dowload {
   order: 1;
 }
+
 .section-dowload img {
   max-width: 100%;
   height: auto;
@@ -219,16 +227,13 @@ section {
   margin: 0 auto;
   background: #000;
   z-index: 1;
-
   display: flex;
   /* align-items: center; */
-
   width: 60%;
   min-width: 15rem;
   padding: 7px 11px;
   border: solid 2px rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 2em 0 #000;
-
   border-radius: 0.75rem;
   align-items: center;
 }
@@ -236,7 +241,6 @@ section {
 .cardanimation-img {
   width: 53px;
   height: 83px;
-
   margin-right: 16px;
 }
 
@@ -259,8 +263,7 @@ section {
   outline: 2px solid #000;
   outline-offset: -2px;
   display: block;
-  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
-    center center no-repeat;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
   background-size: 100%;
   content: "";
   flex-grow: 0;
@@ -274,7 +277,7 @@ section {
   left: 100px;
 }
 
-.section-kids .grid > div:first-child {
+.section-kids .grid>div:first-child {
   order: 2;
 }
 
@@ -283,17 +286,15 @@ section {
 }
 
 /*footer part*/
-
 footer {
   background: black;
   text-align: center;
-
   border-top: #222 8px solid;
   padding: 4rem 0 2rem;
-
   display: grid;
   justify-content: center;
 }
+
 footer form {
   margin: 0;
 }
@@ -304,45 +305,53 @@ footer p {
   font-size: 13px;
 }
 
-/*Responsi */
+.footer-cols {
+  align-content:
+}
+
+/*others */
 @media only screen and (min-width: 320px) and (max-width: 650px) {
   html {
     font-size: 50%;
     height: 100vh;
   }
-  main{
-      height: 80vh;
-  }
-  .text-login{
-      text-align: center;
 
+  main {
+    height: 80vh;
   }
-  .text-login
-  h1{
-      font-size: 4em;
-      width: 80%;
-  }
-  .grid{
-    padding: 16px;
-  }
-  .text-info{
+
+  .text-login {
     text-align: center;
   }
-  .text-info h1{
-      font-size: 3em;
 
-  }
-  .text-info p{
-      font-size: 2.5em;
+  .text-login h1 {
+    font-size: 4em;
+    width: 80%;
   }
 
-  .section-dowload{
-      padding: 0;
+  .grid {
+    padding: 16px;
   }
-  .section-portable .grid > div:first-child {
+
+  .text-info {
+    text-align: center;
+  }
+
+  .text-info h1 {
+    font-size: 3em;
+  }
+
+  .text-info p {
+    font-size: 2.5em;
+  }
+
+  .section-dowload {
+    padding: 0;
+  }
+
+  .section-portable .grid>div:first-child {
     order: 2;
   }
-
 
   button::after {
     position: relative;
@@ -351,41 +360,71 @@ footer p {
 
   .form {
     width: 100%;
-
   }
+
   form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  input{
-      margin-bottom: 10px;
+
+  input {
+    margin-bottom: 10px;
   }
-  button{
+
+  button {
     width: 30%;
     padding: 10px;
     align-items: center;
   }
-  .btnFooter{
-      width: 50%;
-  }
 
+  .btnFooter {
+    width: 50%;
+  }
 }
+
 .section-portable .portable-video {
-    position: absolute;
-    width: 55%;
-    top: 45px;
-    left: 90px;
+  position: absolute;
+  width: 55%;
+  top: 45px;
+  left: 90px;
 }
+
 .tv-video {
-    position: absolute;
-    padding: 0;
-    width: 85%;
-    max-width: 400vw;
-    top: 50px;
-    left: 30px;
+  position: absolute;
+  padding: 0;
+  width: 85%;
+  max-width: 400vw;
+  top: 50px;
+  left: 30px;
 }
+
 @media only screen and (min-width:650px) {
-.grid{padding: 20px;}
+  .grid {
+    padding: 20px;
+  }
+}
+
+/* bottom links */
+.BottomL {
+  background-color: black;
+  padding-left: 150px;
+  font-size: 15px;
+  padding-top: 50px
+}
+
+a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #757575
+}
+
+hr {
+  border-color: grey;
+  border-width: 5px;
+}
+
+table {
+  border-spacing: 100px 20px;
 }
