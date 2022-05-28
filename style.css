@@ -384,39 +384,21 @@ footer p {
   }
 }
 
-.section-portable .portable-video {
-  position: absolute;
-  width: 55%;
-  top: 45px;
-  left: 90px;
-}
 
-.tv-video {
-  position: absolute;
-  padding: 0;
-  width: 85%;
-  max-width: 400vw;
-  top: 50px;
-  left: 30px;
-}
-
-@media only screen and (min-width:650px) {
-  .grid {
-    padding: 20px;
-  }
-}
 
 /* bottom links */
 .BottomL {
+  display: block;
   background-color: black;
-  padding-left: 150px;
+  padding-left: 250px;
+  padding-right: 450px;
   font-size: 15px;
   padding-top: 50px
 }
 
 a {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
   color: #757575
 }
 
@@ -424,7 +406,14 @@ hr {
   border-color: grey;
   border-width: 5px;
 }
-
-table {
-  border-spacing: 100px 20px;
+.BottomL-Links {
+  display: block;
+  list-style-type: disc;
+}
+li {
+  display: inline;
+}
+.BottomL-Country{
+  padding-top: 20px;
+  color: #757575
 }
